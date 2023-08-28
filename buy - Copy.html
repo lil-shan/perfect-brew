@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buy Coffee Maker - The Perfect Brew</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <style>
+    body {
+      background-color: #000000;
+      margin: 0; /* Remove body margin */
+      font-family: Arial, sans-serif;
+      overflow: hidden; /* Hide the scrollbar */
+    }
+
+    /* Hide scrollbar for Chrome, Safari, and Edge */
+    body::-webkit-scrollbar {
+      width: 0.5em;
+    }
+
+    body::-webkit-scrollbar-thumb {
+      background-color: #000000;
+    }
+
+    .container {
+      max-height: 100vh;
+      overflow: scroll;
+      padding: 20px;
+      display: flex;
+    }
+
+    .buy-page {
+      background-image: url("bg5.png"); /* Replace 'your-image.jpg' with your image file path */
+      background-size: cover;
+      background-attachment: fixed;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .form-container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .form-column {
+      flex: 1;
+      padding: 10px;
+      text-align: left;
+    }
+
+    .form-column label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .form-column input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+
+    .cta-button.buy-now {
+      background-color: #ff9900;
+      color: #fff;
+      text-align: center;
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    }
+
+    .cta-button.buy-now:hover {
+      background-color: #ffcc33;
+      transform: scale(1.05);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .contact-details {
+      background-color: #000000;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .contact-details h2 {
+      font-size: 24px;
+    }
+
+    .contact-details a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 24px;
+      margin: 0 15px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="buy-page">
+        <h1>Buy Coffee Maker - The Perfect Brew</h1>
+        <div class="form-container">
+          <div class="form-column">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="John Doe"
+              required
+            />
+
+            <label for="address">Address:</label>
+            <input
+              type="text"
+              id="address"
+              name="address"
+              placeholder="123 Main St"
+              required
+            />
+
+            <label for="zipcode">Zipcode:</label>
+            <input
+              type="text"
+              id="zipcode"
+              name="zipcode"
+              placeholder="12345"
+              required
+            />
+          </div>
+          <div class="form-column">
+            <label for="card-number">Card Number:</label>
+            <input
+              type="text"
+              id="card-number"
+              name="card-number"
+              placeholder="1234 5678 9012"
+              maxlength="12"
+              required
+            />
+
+            <label for="ccv">CCV:</label>
+            <input
+              type="text"
+              id="ccv"
+              name="ccv"
+              placeholder="123"
+              maxlength="3"
+              required
+            />
+
+            <label for="expiry">Expiry Date (dd/mm/yy):</label>
+            <input
+              type="text"
+              id="expiry"
+              name="expiry"
+              placeholder="01/23"
+              pattern="\d{2}/\d{2}/\d{2}"
+              required
+            />
+          </div>
+        </div>
+
+        <a href="thankyou.html" class="cta-button buy-now">Pay $7.99</a>
+      </div>
+    </div>
+    <footer class="contact-details">
+      <h2>Contact Details:</h2>
+      <ul style="list-style: none; display: flex; justify-content: center">
+        <li>
+          <a href="mailto:theperfectbrew@example.com"
+            ><i class="fas fa-envelope"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/theperfectbrew"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/theperfectbrew"
+            ><i class="fab fa-facebook"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
